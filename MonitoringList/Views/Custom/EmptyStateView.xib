@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="E7W-lb-NgR" userLabel="Empty View" customClass="EmptyStateView" customModule="MonitoringList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ0-x8-7xG">
+                    <rect key="frame" x="81.5" y="220" width="212.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="BQ0-x8-7xG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E7W-lb-NgR" secondAttribute="leading" constant="20" id="4TW-sL-Zt2"/>
+                <constraint firstItem="BQ0-x8-7xG" firstAttribute="centerX" secondItem="E7W-lb-NgR" secondAttribute="centerX" id="csL-HR-J2Z"/>
+                <constraint firstItem="BQ0-x8-7xG" firstAttribute="top" secondItem="zd4-WR-qrQ" secondAttribute="top" constant="200" id="oWC-Zc-20j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zd4-WR-qrQ"/>
+            <connections>
+                <outlet property="titleLabel" destination="BQ0-x8-7xG" id="s9K-9z-BYb"/>
+            </connections>
+        </view>
+    </objects>
+</document>
